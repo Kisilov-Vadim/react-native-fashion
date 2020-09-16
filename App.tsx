@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 //import Component
 import OnBoarding from './src/Authentication/OnBoarding/OnBoarding';
+import Welcome from './src/Authentication/Welcome/Welcome';
 import LoadAssets from './src/components/LoadAssets';
 
 
@@ -17,6 +18,7 @@ const AuthenticationStack = createStackNavigator();
 const AuthenticationNavigator = () => (
   <AuthenticationStack.Navigator headerMode="none">
     <AuthenticationStack.Screen name="OnBoarding" component={OnBoarding} />
+    <AuthenticationStack.Screen name="Welcome" component={Welcome} />
   </AuthenticationStack.Navigator>
 )
 
